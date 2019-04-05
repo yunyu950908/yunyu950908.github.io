@@ -17,5 +17,6 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: false
   on:
-    branch: master
+    branch: develop
   local_dir: public
+  target_branch: master
