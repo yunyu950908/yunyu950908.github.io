@@ -18,9 +18,12 @@ branches:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: "$GITHUB_TOKEN"
   keep_history: false
   on:
     branch: develop
   local_dir: public
   target_branch: master
+env:
+  global:
+    secure: inIPsUSdQsKWtNvEuMXlm/ZbEaysrS6uF1k98ckUeGtdY4HddP643soL7Ck0QzpJzlrZdatNLSOPWV7cQqMnvfN4ciu3Silg7jgPK1weEbQL5cyCM/LPiD8myZrMs2TPq7RG9cIkzWG79jry1ZHnscMLbQ8Rn5mMl1zK/8uqSZ46sRUpTGe0dKoFUSSw6+Tz3x2rZSCEq1ix1U3DAbi1k/g412nx9Gx52XShB4X58t4MtBIDmt9bQ/7kSVgd2kXJzC0xFwzecz4jVzdnG1qnA276atn3ic2ho3y+1tbE9tlH6obIyxFmQooGbn+91m1Hy5f7AcVgHmLOLrwROWF7oKSGj11NPhlyLQvmmqnWyHg29QMNv+t7TKMHtCEYwTU2o0f5uo6LIinXPVmqTxW37rXtQm5MkW3avMPWi/lLCuygNYgAqvrfLXCE4XZJZ4QlPGfTSiy0C0yrzlM1UuxGOZaV6W34S2f1WA+cfXvOUWAbOxPpOBsZ9dIkOXMkB0PI35lFOQjZAHrGah94iMS+v9JLHcPNGqk77aDfJuTfzOcKS/E/p5Lm/r2TxVu2uxdeDcmdfkTpsPHU9yTah/yiZL3weJb2BIvGl62rgjCzvKZ1jHKhvcGJY7JSBR/4g0leED+fIzMZP4FJWj5G1dtveGbYtVTVCPeRa8uJmEuCMVY=
