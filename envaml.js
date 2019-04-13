@@ -1,14 +1,20 @@
 const fs = require('fs');
 const path = require('path');
+const dotenv = require('dotenv');
 
-const dotenv = require('dotenv').config();
+const { NODE_ENV = '' } = process.env;
 
 function getEnvMap() {
-  const result = {};
-  Object
-    .keys(dotenv.parsed)
-    .forEach(k => result[k] = process.env[k]);
-  return result;
+  const envFile = NODE_ENV === 'development'
+    ? `.development.env`
+    : '.env';
+  const env = dotenv.parse(fs.readFileSync(envFile));
+  if (NODE_ENV !== 'development') {
+    Object
+      .keys(env)
+      .forEach(k => env[k] = process.env[k]);
+  }
+  return env;
 }
 
 function getYmlPath({ relativePath, source = '', target = '' }) {

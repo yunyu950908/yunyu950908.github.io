@@ -6,6 +6,6 @@ node_modules/
 public/
 .deploy*/
 .idea
-.env
+.development.env
 _config.yml
 leancloud.memo
