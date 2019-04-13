@@ -78,4 +78,11 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  - type: leancloud_counter_security_sync
+
+leancloud_counter_security:
+  enable_sync: true
+  app_id: $APP_ID_LC
+  app_key: $APP_KEY_LC
+  username: $LC_COUNTER_USERNAME
+  password: $LC_COUNTER_PASSWORD
