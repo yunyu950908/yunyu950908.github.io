@@ -6,10 +6,10 @@ node_js:
 cache:
   yarn: true
 install:
-  - yarn global add hexo
   - yarn install
 script:
-  - hexo generate
+  - yarn env
+  - yarn hexo deploy # leancloud_counter_security_sync + generate static resources
   - cp ./CNAME ./public
 # https://docs.travis-ci.com/user/customizing-the-build/#safelisting-or-blocklisting-branches
 branches:
