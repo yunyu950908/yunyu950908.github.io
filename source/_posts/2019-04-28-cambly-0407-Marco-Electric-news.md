@@ -1,5 +1,5 @@
 ---
-title: 'cambly-0407-Marco (Electric Vehicles Outsell Petrol, Diesel Cars in Norway)'
+title: 'cambly-0407-Marco (news)'
 date: 2019-04-28 23:54:49
 tags:
 - cambly
@@ -7,9 +7,11 @@ tags:
 - English
 ---
 
-# cambly-0407-Marco (Electric Vehicles Outsell Petrol, Diesel Cars in Norway)
+# cambly-0407-Marco (news)
 
 @(cambly)
+
+## Electric Vehicles Outsell Petrol, Diesel Cars in Norway
 
 - outsell - to sell more or be sold in larger numbers than something else
 	- Electric Vehicles Outsell Petrol, Diesel Cars in Norway
